@@ -19,7 +19,7 @@ export default function Instance({ id, imageUrl, name }: InstanceProps) {
                 <HiPencil className="w-[25px] h-[25px] hover-active-effect hover:text-selected cursor-pointer" />
                 <HiCog6Tooth className="w-[25px] h-[25px] hover-active-effect hover:text-selected cursor-pointer" />
             </div>
-            <h3 className="text-3 font-medium m-32">{ name }</h3>
+            <h3 className="text-3 font-medium m-32 select-none cursor-default">{ name }</h3>
         </div>
     )
 }
