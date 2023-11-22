@@ -1,6 +1,5 @@
+import InstancesGrid from "@/components/ui/instances/InstancesGrid";
 import { HiMiniPlus } from "react-icons/hi2";
-import Rust from "@/components/Rust";
-import Instance from "@/components/ui/Instance";
 
 export default function Home() {
     return (
@@ -18,18 +17,7 @@ export default function Home() {
                     <p className="text-white text-sub">Create Group</p>
                 </button>
             </div>
-            <div className="section-style w-full h-full flex flex-col gap-64 max-[1500px]:h-fit overflow-y-auto p-64">
-                <div className="flex flex-col gap-32" id="Main">
-                    <div className="flex gap-16 align-middle place-items-center">
-                        <h3 className="text-3 font-medium">Main Instances</h3>
-                    </div>
-                    <div className="flex flex-wrap gap-32">
-                        <Instance id={0} imageUrl="/instances/1.png" name="Instance!" />
-                    </div>
-                    <Rust />
-                    <div className="h-screen"></div>
-                </div>
-            </div>
+            <InstancesGrid />
         </div>
     );
 }
